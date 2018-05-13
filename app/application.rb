@@ -9,6 +9,8 @@ class Application
       found_item = @@items.find do |item|
         item.name == req_item
       end
+      if found_item
+        resp.write found_item.price
 
     else
       resp.write 'Route not found'
