@@ -4,14 +4,14 @@ class Application
     req = Rack::Request.new(env)
 
     case req.path
-    when /\/testing/
+    when /\/items\//
+
+    else
       resp.write 'Route not found'
       resp.status = 404
-    # when condition
 
-  when /\/items\//
     end
-    resp.write ''
+
     resp.finish
   end
 end
