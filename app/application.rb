@@ -6,7 +6,7 @@ class Application
     case req.path
     when /\/items\//
       req_item = req.path.split('/')[2]
-      found item = @@items.find do |item|
+      found_item = @@items.find do |item|
         item.name == req_item
       end
 
