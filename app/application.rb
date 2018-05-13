@@ -5,7 +5,7 @@ class Application
 
     case req.path
     when /\/items\//
-      puts req.path
+      puts req.path.plit[2]
 
     else
       resp.write 'Route not found'
