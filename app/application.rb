@@ -5,5 +5,6 @@ class Application
 
     resp.write ''
     resp.status = 200
+    resp.finish
   end
 end
