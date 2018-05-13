@@ -9,6 +9,7 @@ class Application
       resp.status = 404
     # when condition
 
+  when /\/items\//
     end
     resp.write ''
     resp.finish
